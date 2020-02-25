@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoFIPE</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">AutoFIPE</h1>
+        <p class="lead">
+          Consulte a tabela FIPE e calcule juros rapidamente
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <form id="fipe">
+        <div class="form-group">
+          <label for="custom-select">Categoria</label>
+          <select id="categoria" class="custom-select">
+            <option value="" hidden selected="selected"
+              >Selecione a categoria</option
+            >
+            <option value="carros">Carros</option>
+            <option value="motos">Motos</option>
+            <option value="caminhoes">Caminhões</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="custom-select">Marcas</label>
+          <select disabled id="marca" class="custom-select">
+            <option value="" hidden selected="selected"
+              >Selecione a marca</option
+            >
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="dist/js/actions.js"></script>
+  </body>
+</html>
